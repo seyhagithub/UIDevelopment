@@ -17,7 +17,6 @@ class ListMotorTableViewCell: UITableViewCell {
     listCollectionView.delegate = parentObject
     listCollectionView.dataSource = parentObject
     
-    
   }
   
     override func awakeFromNib() {
