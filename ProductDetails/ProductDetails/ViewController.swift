@@ -31,13 +31,14 @@ class ViewController: UIViewController {
   let colorString = ["White", "Black", "Red"]
   let gender = ["Female", "Male"]
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-      
-      //Table View Configuration
-      detailTableView.delegate = self
-      detailTableView.dataSource = self
-    }
+  override func viewDidLoad() {
+      super.viewDidLoad()
+    
+    //Table View Configuration
+    detailTableView.delegate = self
+    detailTableView.dataSource = self
+    
+  }
   
   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     view.endEditing(true)

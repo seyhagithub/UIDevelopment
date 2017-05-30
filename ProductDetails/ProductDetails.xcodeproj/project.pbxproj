@@ -137,6 +137,7 @@
 				TargetAttributes = {
 					7107E6D51EDBF29000D44EE9 = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = Z495DZRPVP;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -314,6 +315,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z495DZRPVP;
 				INFOPLIST_FILE = ProductDetails/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.seyha.ProductDetails;
@@ -326,6 +328,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z495DZRPVP;
 				INFOPLIST_FILE = ProductDetails/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.seyha.ProductDetails;
@@ -353,6 +356,7 @@
 				7107E6EA1EDBF29000D44EE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
