@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScrollViewPage" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dA1-PF-bw1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="lxP-XL-zaJ">
+                                <rect key="frame" x="168" y="201" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" red="0.35686274509999999" green="0.39607843139999999" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.55330121340000005" green="0.03998632236" blue="0.0126693612" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lxP-XL-zaJ" firstAttribute="top" secondItem="dA1-PF-bw1" secondAttribute="bottom" constant="1" id="1AD-Bj-d07"/>
+                            <constraint firstItem="dA1-PF-bw1" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="2WQ-yN-mv9"/>
+                            <constraint firstItem="lxP-XL-zaJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7gi-1R-zBE"/>
+                            <constraint firstAttribute="trailing" secondItem="dA1-PF-bw1" secondAttribute="trailing" id="EBY-wE-a4S"/>
+                            <constraint firstItem="dA1-PF-bw1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="TB8-Pq-BjY"/>
+                            <constraint firstItem="dA1-PF-bw1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hcK-to-2PZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="featurePageControl" destination="lxP-XL-zaJ" id="YqK-sp-Yes"/>
+                        <outlet property="featureScrollView" destination="dA1-PF-bw1" id="AG9-fp-std"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
